@@ -16,6 +16,11 @@ const routes: Routes = [
   {
     path: 'note/:id',
     component: NoteDetailComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'board',
+    pathMatch: 'full'
   }
 ];
 

@@ -3,7 +3,12 @@
   <mat-card-content>
     <mat-list>  
       <div mat-subheader>
-        Choose a note for more details
+        <span *ngIf="notes.length > 0">
+          Choose a note for more details
+        </span>
+        <span *ngIf="notes.length === 0">
+          No notes to show
+        </span>
       </div>
       <mat-list-item *ngFor="let note of notes, index as i">
         <mat-icon mat-list-icon>
@@ -11,14 +16,16 @@
           {{ note.icon }}
         </mat-icon>
         <div mat-line>
-          <a [routerLink]="['/note', (i+1) ]">{{ note.content }}</a>
+          <a [routerLink]="['/note', (i+1) ]" class="no-link">
+            {{ note.content }}
+          </a>
         </div>
         <div mat-line> {{ note.date | date }} </div>
       </mat-list-item>
     </mat-list>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button [disabled]="notes.length == 0" (click)="deleteAll()">Delete all</button>
+    <button mat-button color="warn" [disabled]="notes.length == 0" (click)="deleteAll()">Delete all</button>
   </mat-card-actions>
 </mat-card>
 
