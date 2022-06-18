@@ -1,0 +1,19 @@
+.contenedor{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  //grid
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+}
+
+@media screen and (max-wdith: 900px){
+  
+}
+@media screen and (max-wdith: 700px){
+  
+}
+@media screen and (max-wdith: 600px){
+  
+}

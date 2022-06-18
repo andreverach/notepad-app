@@ -1,0 +1,9 @@
+<div class="contenedor">
+  <app-pad
+  (sendNote)="saveNote($event)"></app-pad>
+  <app-list
+  (deleteNotes)="deleteAll($event)"
+  [notes]="notes"></app-list>
+</div>
+
+

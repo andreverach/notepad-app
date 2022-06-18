@@ -1,0 +1,13 @@
+<mat-card class="example-card">
+  <mat-card-title>Note</mat-card-title>
+  <mat-card-content>
+    <p>
+      {{ note.content }}
+    </p>
+    <small>{{ note.date | date }}</small>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="back()">Regresar</button>
+    <button mat-button (click)="remove()">Eliminar</button>
+  </mat-card-actions>
+</mat-card>
