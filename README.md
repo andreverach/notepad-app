@@ -14,6 +14,7 @@ Notepad aplication for save your notes.
 - Models
 - Services
 - Smart and dumb components
+- Deployed on [Netlify](https://www.netlify.com/)
 
 ## Run Locally
 
