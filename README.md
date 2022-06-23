@@ -6,7 +6,31 @@ Notepad aplication for save your notes
 
 ## Tech Stack
 
-**Client:** Angular12+, Angular Material
+- Angular12+
+- Angular Material
+## Features
 
+- Models
+- Services
+- Smart and dumb components
 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/andreverach/notepad-app.git
+```
+
+Go to the project directory and install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  ng serve -o
+```
 
